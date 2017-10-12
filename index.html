@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Domainesia Task</title>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+<title>Domainesia Task</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<style type="text/css">
-		.container-new{
-			width      : 48%;
-			padding    : 0 2% 2% 2%;
-			border     : 1px #ddd solid;
-			border-radius: 5px;
-			margin-top : 10%;
-		}
-		.info{
-			margin: 5px 0;
-		}
-		.sparator{
-			border-bottom:solid 1px #ddd;
-		}
-		.sparatorRed{
-			border-color:#AC4344;
-		}
-		.sparatorGreen{
-			border-color:#377645;
-		}
+	  .container-new{
+		width      : 48%;
+		padding    : 0 2% 2% 2%;
+		border     : 1px #ddd solid;
+		border-radius: 5px;
+		margin-top : 10%;
+	  }
+	  .info{
+		margin: 5px 0;
+	  }
+	  .sparator{
+		border-bottom:solid 1px #ddd;
+	  }
+	  .sparatorRed{
+		border-color:#AC4344;
+	  }
+	  .sparatorGreen{
+		border-color:#377645;
+	  }
 	</style>
 </head>
 
 <body>
 <div class="container-fluid" align="center">
   <div class="container-new" align="left">
-	  <form action="http://nkri.life/" method="post" id="testing" name="test" houtput="ShowName">
-			<h2 class="sparator"> Second Round Challenge!</h2>
-		  <div id="ShowName">
-			  	<div class="form-group">
-						<label for="namaDoank">Nama</label>
+	<form action="http://nkri.life/" method="post" id="testing" name="test" houtput="ShowName">
+		<h2 class="sparator"> Second Round Challenge!</h2>
+		<div id="ShowName">
+		  	<div class="form-group">
+				<label for="namaDoank">Nama</label>
 			     	<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nama" required="required">
-					</div>
-					<button type="submit" id="butSave" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-					  	Save
-					</button>
 			</div>
-		</form>
+			<button type="submit" id="butSave" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">Save</button>
+		</div>
+	</form>
 	<div class="info" id="info"></div>
   </div>
 </div>
