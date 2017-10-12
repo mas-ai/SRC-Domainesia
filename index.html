@@ -61,7 +61,6 @@
 		return '<br/><button type="button"  data-loading-text="Loading..." onclick="getItBack(\''+houtput+'\')" class="btn btn-primary" autocomplete="off">Kembali</button>'
 	}
 	function connecting(objectForm){
-		console.log('mulai');
 		var formID      = objectForm.attr('id');
 		var formDetails = $('#'+formID);
 		var formUrl     = $(formDetails).attr('action');
@@ -85,11 +84,8 @@
 							var dataNum = parseInt(jSonData["secret"].num);
 							$("#"+houtput).closest(".container-new").addClass('alert alert-'+((dataNum % 2)== 1?'success':'danger'));
 							$("#"+houtput).prev().addClass('sparator'+((dataNum % 2)== 1?'Green':'Red'));
-							
 							$("#"+houtput).html('<h3 class="text-capitalize">'+namanya+' ('+dataNum+')</h3>'+buttonKembali(houtput));
 							$("#info").html('');
-							//var new
-
 						}
 						else if(cekRes == false){
 							connecting(objectForm);
@@ -105,7 +101,6 @@
 					    $('#info').html(hAlert('danger','Failed to connect, Status 404!'));
 				    }
 				});
-			console.log(formData);
 		}
 		else{
 			$('#info').html(hAlert('danger','Oops.. Cannot find Type or URL cannot reach or Name is Empty, please check your input and try again!'));
